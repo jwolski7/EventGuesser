@@ -1,0 +1,80 @@
+
+button1 {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    height: 90%;
+}
+button2 {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  height: 90%;
+}
+
+  .i1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.i2 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.conLeft {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  height: 90%;
+ 
+}
+
+.conRight {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  height: 90%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgb(0, 0, 0);
+  background-color: white;
+  font-size: 24px;
+}
+
+.Center {
+  text-align: center;
+}
+
+.Right {
+  text-align: right;
+}
+
+button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+
+

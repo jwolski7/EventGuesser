@@ -1,0 +1,44 @@
+
+
+<div>
+    <h1 class="Right"> 
+        <button [disabled]="clicked" (click)="handlePlay()">Play</button>
+        High Score: {{highScore}}
+    </h1>
+
+    <h1 class="Center"> What happened first?</h1>
+    <h1 class="Right">Score: {{ score }}</h1>
+</div>
+<div>
+    
+
+        <div class="conLeft"> 
+            <input class="i1" type="image" (click)="handleClick1()" [src]="image1.img">
+            <div class="centered" (click)="handleClick1()">
+                {{ name1 }}
+                <div *ngIf="bool1">
+                  {{ year1 }}  
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="conRight"> 
+            <input class="i2" type="image" (click)="handleClick2()" [src]="image2.img">
+            <div class="centered" (click)="handleClick2()">
+                {{ name2 }}
+                <div *ngIf="bool2">
+                    {{ year2 }}
+                </div>
+                
+            </div>
+        </div>
+        
+    
+</div>
+  
+
+
+
+
+
