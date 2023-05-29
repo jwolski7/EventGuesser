@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "IqHePXvZnluES3+f9RXgBG9YQIffoNNPMMmagT090ls=",
+  "Source": "EventGuesserAPI",
+  "BasePath": "_content/EventGuesserAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
