@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EventGuesserAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class HistoricalEventsController : ControllerBase
     {
@@ -21,6 +21,18 @@ namespace EventGuesserAPI.Controllers
         public async Task<ActionResult<List<HistoricalEvent>>> GetHistoricalEvents()
         {
             return Ok(await _context.HistoricalEvents.ToListAsync());
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<HistoricalEvent>>> GetHistoricalEvent(int id)
+        {
+            var dbEvent = await _context.HistoricalEvents.FindAsync(id);
+            if (dbEvent == null)
+            {
+                return BadRequest("Event not found");
+            }
+
+            return Ok(dbEvent);
         }
 
         [HttpPost]
